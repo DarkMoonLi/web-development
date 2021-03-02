@@ -1,0 +1,11 @@
+PROGRAM GiveAvailable(INPUT, OUTPUT);
+USES Dos;
+BEGIN {GiveAvailable}
+  WRITELN('Content-Type: text/plain');
+  WRITELN;
+  WRITELN(GetENV('REQUEST_METHOD'));
+  WRITELN(GetENV('QUERY_STRING'));
+  WRITELN(GetENV('CONTENT_LENGTH'));
+  WRITELN(GetENV('HTTP_USER_AGENT'));
+  WRITELN(GetENV('HTTP_HOST'));
+END. {GiveAvailable}
