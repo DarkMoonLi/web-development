@@ -1,0 +1,168 @@
+/*стили для расположения блоков*/
+
+body
+{
+    margin: 0px;
+}
+
+.conteiner
+{
+    width: 100%;
+    height: 1271px;
+    margin: 0px 460px;
+}
+
+.block-image
+{
+    margin-left: 18px;
+    margin-top: 98px;
+    float: left;
+    overflow: hidden;
+}
+
+.position-author-quote
+{
+    position: relative;
+    bottom: 24px;
+    left: 2px;
+}
+.block-quote__quote-and-author
+{
+    width: 450px;
+    position: relative;
+    left: 61px;
+    bottom: 45px;
+}
+
+.block-quote
+{
+    display: inline-block;
+    width: 570px;
+    height: 300px;
+    margin-left: 61px;
+    margin-top: 151px;
+}
+
+.position-my-favourites-author
+{
+    position: relative;
+    bottom: 20px;
+}
+
+.position-my-favourites-film
+{
+    display: inline;
+    float: left;
+    padding-left: 19px;
+    padding-bottom: 30px;
+}
+
+.position-list1
+{
+    padding-bottom: 20px;
+}
+
+.position-list2
+{
+    position: relative;
+    bottom: 120px;
+    right: 5px;
+}
+.clear-float:after
+{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.side-bar
+{
+  display: inline;
+  float: left;
+  border:double green;
+}
+
+.content
+{
+  /* margin-top: 100px; */
+}
+
+
+/*стили для расположения блоков*/
+
+/* стили для текста и изображений*/
+
+.image
+{
+    object-fit: cover;
+    width: 330px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: #132d36;
+}
+
+.block-quote__image
+{
+
+    display: inline;
+    width: 130px;
+    height: 80px;
+}
+
+.strip
+{
+    width: 60px;
+    height: 6px;
+}
+.block-quote__quote-and-author__quote
+{
+    font: italic 28px/42px "Georgia";
+    color: #848484 ;
+}
+
+.block-quote__quote-and-author__author-quote
+{
+    font: bold 16px/42px "Open Sans";
+    color: #333333;    
+}
+
+.font-content
+{
+    font: 19px/32px "Georgia"; 
+    color: #555555;
+}
+
+.name
+{
+    font: bold 48px "Open Sans";
+}
+
+.hobby
+{
+    font: 36px "Open Sans"; 
+}
+
+.my-favourites
+{
+    font: 600 24px/32px "Open Sans";
+    color: #15a98c
+}
+
+.list
+{
+    font: 19px/36px Georgia;
+    color: #555555;
+}
+
+.write-to-me
+{
+    font: 19px Georgia;
+    color: #15a98b;
+}
+
+.write_to_me:after
+{
+    content: "\2192";
+}
+
+/* стили для текста и изображений*/

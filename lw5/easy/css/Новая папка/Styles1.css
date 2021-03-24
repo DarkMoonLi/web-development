@@ -1,0 +1,66 @@
+.image
+{
+    object-fit: cover;
+    width: 330px;
+    height: 350px;
+}
+
+.quotes
+{
+    width: 130px;
+    height: 80px;
+}
+
+.strip
+{
+    width: 60px;
+    height: 6px;
+}
+.quote
+{
+    font: italic 29px Georgia;
+    color: #848484 ;
+}
+
+.author_quote
+{
+    font: italic 29px Georgia;    
+}
+
+.font_content
+{
+    font: 19px Georgia;    
+}
+
+.name
+{
+    font: bold 48px "Open Sans";
+}
+
+.hobby
+{
+    font: 36px "Open Sans"; 
+}
+
+.my_favourites
+{
+    font: 600 24px "Open Sans";
+    color: #15a98c
+}
+
+.list
+{
+    font: 19px Georgia;
+    color: #555555;
+}
+
+.write_to_me
+{
+    font: 19px Georgia;
+    color: #15a98b;
+}
+
+.write_to_me:after
+{
+    content: "\2192";
+}
