@@ -216,3 +216,43 @@
     margin-left: 6px;
     content: "\2192";
 }
+
+.love-films
+{
+    font: 400 34px/42px "Open Sans";
+    color: #333333;
+}
+
+.block-films
+{
+    margin: 91px 275px 0 360px;
+
+}
+
+.films
+{
+    display: flex;
+    justify-content: center;
+}
+
+.name-film
+{
+    margin-left: 1px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    font: 700 22px/32px "Open Sans";
+    color: #555555;
+}
+
+.films-text
+{
+    font: 16px/28px "Georgia";
+    color: #555555;
+}
+
+.films__image
+{
+    margin-top: 33px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
