@@ -1,0 +1,218 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.main-block
+{
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu__button-about-me
+{
+    width: 140px;
+    height: 50px;
+    background-color: #15a98c;
+    color: #f5f5f5;
+    margin-left: 480px;
+    margin-right: 10px;
+}
+
+.menu__button-text
+{   display: flex;
+    font: 19px/32px "Georgia";
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu__button-hobby
+{
+    color: #333;
+    width: 140px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.menu__button-films
+{
+    color: #333;
+    width: 200px;
+    height: 50px;
+}
+
+.container
+{
+    width: 100%;
+    margin: 0 480px 0 480px;
+}
+
+.clear-float
+{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.block-image
+{
+    float: left;
+    margin-left: 62px;
+    margin-top: 211px;
+    margin-bottom: 23px;
+}
+
+.block-image__image
+{
+    width: 330px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.block-quote
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 570px;
+    height: 100px;
+    margin-right: 7px;
+    margin-top: 173px;
+}
+
+.block-quote__image
+{
+    display: inline;
+    width: 130px;
+    height: 80px;
+    position: relative;
+    top: 77px;
+    left: 10px;
+}
+
+.block-quote__quote
+{
+    margin-top: 63px;
+    margin-left: 62px;
+    font: italic 28px/1.5 "Georgia";
+    color: #ffffff;
+    margin-bottom: 1px;
+}
+
+.block-quote__author
+{
+    margin-left: 65px;
+    font: bold 16px/2.625 "Open Sans";
+    color: #ffffff; 
+}
+
+.side-bar
+{
+    float: left;
+    display: inline;
+}
+
+.side-bar__favourites-author
+{
+    font: 600 24px/32px "Open Sans";
+    color: #15a98c;
+    padding-top: 17px;
+    padding-left: 62px;
+}
+
+.side-bar__favourites-films
+{
+    font: 600 24px/32px "Open Sans";
+    color: #15a98c;
+    padding-top: 41px;
+    padding-left: 62px;
+}
+
+.side-bar__list
+{
+    font: 19px/36px Georgia;
+    color: #555555;
+    margin-top: 12px;
+    margin-left: 83px;
+}
+
+.side-bar__list_string
+{
+    margin-left: 2px;
+}
+
+.side-bar__list_writers
+{
+    margin-left: 79px;
+}
+
+.content
+{
+    display: inline-block; 
+    width: 570px;
+    margin-left: 139px;
+    margin-top: -143px;
+}
+
+.content__name
+{
+    font: bold 49px/42px "Open Sans";
+    margin-bottom: 26px;
+    margin-left: 7px;
+}
+
+.content__hobby
+{
+    font: 400 36px/42px "Open Sans"; 
+    margin-top: 42px;
+}
+
+.content__strip
+{
+    width: 63px;
+    height: 10px;
+}
+
+.content__text_big-indent
+{
+    margin-top: 37px;
+}
+
+.content__text
+{
+    font: 19px/32px "Georgia"; 
+    color: #555555;
+    margin-left: 3px;
+}
+.content__text_small-indent
+{
+    margin-top: 15px;
+}
+
+.content__write-to-me
+{
+    position: relative;
+    font: 19px/32px Georgia;
+    color: #15a98b;
+    text-decoration: underline;
+    margin-top: 42px;
+    margin-left: 3px;
+}
+
+.content__write-to-me_arrow::after
+{
+    position: absolute;
+    margin-left: 6px;
+    content: "\2192";
+}
