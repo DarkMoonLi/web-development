@@ -1,34 +1,34 @@
-body
+*
 {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .conteiner
 {
     width: 100%;
-    margin:0px 460px 0px 460px;
+    margin: 0 460px 0 460px;
 }
 
-.clear-float::after
+.clear-float
 {
     display: block;
-    content:'';
+    content: '';
     clear: both;
 }
 
 .block-image
 {
     float: left;
-    overflow: hidden;
     margin-left: 21px;
-    margin-top: 100px;
+    margin-top: 101px;
+    margin-bottom: 23px;
 }
 
 .block-image__image
 {
     width: 330px;
     height: 350px;
-    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -37,8 +37,8 @@ body
     display: inline-block;
     width: 570px;
     height: 300px;
-    margin-left: 61px;
-    margin-top: 151px;
+    margin-left: 50px;
+    margin-top: 73px;
 }
 
 .block-quote__image
@@ -46,22 +46,24 @@ body
     display: inline;
     width: 130px;
     height: 80px;
+    position: relative;
+    top: 77px;
+    left: 10px;
 }
 
 .block-quote__quote
 {
-    margin-top: -32px;
-    margin-left: 17px;
-    font: italic 28px/42px "Georgia";
-    color: #848484 ;
+    margin-top: 63px;
+    margin-left: 69px;
+    font: italic 28px/1.5 "Georgia";
+    color: #848484;
+    margin-bottom: 1px;
 }
 
 .block-quote__author
 {
-    position: relative;
-    bottom: 25px;
-    margin-left: 21px;
-    font: bold 16px/42px "Open Sans";
+    margin-left: 72px;
+    font: bold 16px/2.625 "Open Sans";
     color: #333333; 
 }
 
@@ -83,84 +85,84 @@ body
 {
     font: 600 24px/32px "Open Sans";
     color: #15a98c;
-    padding-top: 18px;
+    padding-top: 41px;
     padding-left: 20px;
 }
 
-.side-bar__list1
+.side-bar__list
 {
     font: 19px/36px Georgia;
     color: #555555;
-    margin-top: -13px;
+    margin-top: 12px;
+    margin-left: 42px;
 }
 
-.side-bar__list2
+.side-bar__list_string
 {
-    font: 19px/36px Georgia;
-    color: #555555;
-    margin-top: -12px;
-    margin-left: -1px;
+    margin-left: 2px;
+}
+
+.side-bar__list_writers
+{
+    margin-left: 38px;
 }
 
 .content
 {
     float: left;
     width: 570px;
-    margin-left: 146px;
+    margin-left: 139px;
+    margin-top: 16px;
 }
 
 .content__name
 {
-
     font: bold 49px/42px "Open Sans";
+    margin-bottom: 26px;
+    margin-left: 7px;
 }
 
 .content__hobby
 {
-    position: relative;
-    top: 15px;
-    left: -8px;
     font: 400 36px/42px "Open Sans"; 
+    margin-top: 42px;
 }
 
 .content__strip
 {
-    position: relative;
-    bottom: 15px;
-    right: 4px;
     width: 63px;
     height: 10px;
 }
 
-.content__text1
+.content__text_big-indent
 {
-    position: relative;
-    top: 3px;
-    left: -4px;
-    font: 19px/32px "Georgia"; 
-    color: #555555;
+    margin-top: 37px;
 }
 
-.content__text2
+.content__text
 {
-    position: relative;
-    top: 2px;
-    left: -4px;
     font: 19px/32px "Georgia"; 
     color: #555555;
+    margin-left: 3px;
+}
+.content__text_small-indent
+{
+    margin-top: 15px;
 }
 
 .content__write-to-me
 {
+    position: relative;
     font: 19px/32px Georgia;
     color: #15a98b;
     text-decoration: underline;
-    position: relative;
-    left: -4px;
-    top: 24px;
+    margin-top: 43px;
+    margin-left: 3px;
 }
 
-.content__write-to-me:after
+.content__write-to-me_arrow::after
 {
+    position: absolute;
+    margin-left: 6px;
     content: "\2192";
 }
