@@ -217,7 +217,7 @@
     content: "\2192";
 }
 
-.love-films
+.block-films__love-films
 {
     margin-left: 360px;
     font: 400 34px/42px "Open Sans";
@@ -232,14 +232,14 @@
     height: 1005px;
 }
 
-.films
+.block-films__films
 {
     margin:0 275px 0 360px;
     display: flex;
     justify-content: center;
 }
 
-.name-film
+.block-films__films_name-film
 {
     margin-left: 1px;
     margin-top: 20px;
@@ -248,20 +248,20 @@
     color: #333;
 }
 
-.films-text
+.block-films__films_films-text
 {
     font: 16px/28px "Georgia";
     color: #555555;
 }
 
-.films__image
+.block-films__films_image
 {
     margin-top: 33px;
     margin-right: 20px;
     border-radius: 5px;
 }
 
-.block-button
+.block-films__block-button
 {
     margin-top: 54px;
     display: flex;
@@ -274,7 +274,7 @@
     font:19px/32px "Georgia";
     color: #f5f5f5;
 }
-.all-films
+.block-films__block-button_all-films
 {
     display: flex;
     align-items: center;
