@@ -219,18 +219,22 @@
 
 .love-films
 {
+    margin-left: 360px;
     font: 400 34px/42px "Open Sans";
     color: #333333;
 }
 
 .block-films
 {
-    margin: 91px 275px 0 360px;
-
+    padding-top: 35px;
+    margin-top: 56px;
+    background-color: #f9f9f9;
+    height: 1005px;
 }
 
 .films
 {
+    margin:0 275px 0 360px;
     display: flex;
     justify-content: center;
 }
@@ -241,7 +245,7 @@
     margin-top: 20px;
     margin-bottom: 18px;
     font: 700 22px/32px "Open Sans";
-    color: #555555;
+    color: #333;
 }
 
 .films-text
@@ -255,4 +259,35 @@
     margin-top: 33px;
     margin-right: 20px;
     border-radius: 5px;
+}
+
+.block-button
+{
+    margin-top: 54px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-text
+{
+    font:19px/32px "Georgia";
+    color: #f5f5f5;
+}
+.all-films
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: url(../images/button_background.jpg);
+    width: 220px;
+    height: 50px;
+    margin-left: 46px;
+}
+
+.questionnaire
+{
+    display: flex;
+    align-items: center;
 }
