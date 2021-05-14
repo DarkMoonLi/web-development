@@ -29,14 +29,16 @@ if (ctype_alnum($Password))
     {
       $Numbers++;
     }
-    $CountRepeats = $Count + 1;
-    while (($Password[$CountRepeats] === $Password[$Count]) and ($CountRepeats < $Length))
+    for ($i = 1; $i < $Length; $i++)
     {
-      $CountRepeats++;
-      $Repeats++;
+      for ($j = 1; $j < $Length; $j++)
+      {
+        If ($Password[$j] === $Password[$i])
+        {
+          $CountRepeats++;
+        }
+      }
     }
-    $Reliability = $Reliability - $Repeats; 
-    $Repeats = 0;  
     $Count++;
   }
 }

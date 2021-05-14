@@ -15,5 +15,5 @@ if ($Logic==true)
     }
 else
     {
-        echo "No";
+        echo "No, because identifier not consist from letters and numbers.";
     }
