@@ -39,7 +39,7 @@ SELECT
     students.name AS `student_name`,
     `last_name` AS `student_last_name`,
     `middle_name` AS `middle_name`,
-    `age` AS `age`,
+    `age` AS `age`, 
     groups.name AS `groupe`
         FROM `students`
 	JOIN `groups` ON students.id_groupe = groups.id_groupe

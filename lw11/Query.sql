@@ -6,9 +6,9 @@ CREATE TABLE
         `name` NVARCHAR(255) NOT NULL,
 	`last_name` NVARCHAR(255) NOT NULL,	
 	`middle_name` NVARCHAR(255) NOT NULL,
-	PRIMARY KEY(`id_student`),
-        FOREIGN KEY(`id_groupe`) REFERENCES groups(`id_groupe`),
-        FOREIGN KEY(`id_faculty`) REFERENCES facultes(`id_faculty`));
+PRIMARY KEY(`id_student`),
+FOREIGN KEY(`id_groupe`) REFERENCES groups(`id_groupe`),
+FOREIGN KEY(`id_faculty`) REFERENCES facultes(`id_faculty`)); //удаление студентов при удалении группы или добавлении
 
 
 CREATE TABLE 
@@ -16,15 +16,15 @@ CREATE TABLE
         `id_groupe` INT NOT NULL AUTO_INCREMENT,
         `id_faculty` INT NOT NULL,
         `name` NVARCHAR(255) NOT NULL,
-	PRIMARY KEY(`id_groupe`),
-        FOREIGN KEY(`id_faculty`) REFERENCES facultes(id_faculty))
+PRIMARY KEY(`id_groupe`),
+FOREIGN KEY(`id_faculty`) REFERENCES facultes(id_faculty));
 
 
 CREATE TABLE 
     `facultes` (
         `id_faculty` INT NOT NULL AUTO_INCREMENT,
         `name` NVARCHAR(255) NOT NULL,
-	PRIMARY KEY(`id_faculty`))
+PRIMARY KEY(`id_faculty`));
 
 
 SELECT 
@@ -32,8 +32,8 @@ SELECT
     `last_name` AS `student_last_name`,
     `middle_name` AS `middle_name`,
     `age` AS `age`
-        FROM `students`
-        WHERE `age`= 19;
+FROM `students`
+WHERE `age` = 19;
 
 SELECT 
     students.name AS `student_name`,
@@ -41,9 +41,9 @@ SELECT
     `middle_name` AS `middle_name`,
     `age` AS `age`,
     groups.name AS `groupe`
-        FROM `students`
-	JOIN `groups` ON students.id_groupe = groups.id_groupe
-	WHERE groups.name = 'ПС';
+FROM `students`
+JOIN `groups` ON students.id_groupe = groups.id_groupe
+WHERE groups.name = 'ПС';
 
 SELECT 
     students.name AS `student_name`,
@@ -51,9 +51,9 @@ SELECT
     `middle_name` AS `middle_name`,
     `age` AS `age`,
     facultes.name AS `faculty`
-        FROM `students`
-	JOIN `facultes` ON students.id_faculty = facultes.id_faculty
-	WHERE facultes.name = 'ФИиВТ';
+FROM `students`
+JOIN `facultes` ON students.id_faculty = facultes.id_faculty
+WHERE facultes.name = 'ФИиВТ';
 
 SELECT 
     students.name AS `student_name`,
@@ -61,12 +61,12 @@ SELECT
     students.middle_name AS ` middle_name`,
     groups.name AS `group`,
     facultes.name AS `faculty`
-        FROM `students`
-	JOIN `facultes` ON students.id_faculty = facultes.id_faculty
-        JOIN `groups` ON students.id_groupe = groups.id_groupe
-	WHERE (students.name = 'Максим' && 
-	students.last_name = 'Прозоров' &&
-	students.middle_name = 'Андреевич');
+FROM `students`
+JOIN `facultes` ON students.id_faculty = facultes.id_faculty
+JOIN `groups` ON students.id_groupe = groups.id_groupe
+WHERE (students.name = 'Максим' AND 
+       students.last_name = 'Прозоров' AND
+       students.middle_name = 'Андреевич');
 
 INSERT INTO
     `students` (`name`, `last_name`, `middle_name`, `age`, `id_groupe`, `id_faculty`)
