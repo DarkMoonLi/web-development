@@ -12,6 +12,7 @@ $CountRepeats = 0;
 $Numbers = 0;
 $UpperValue = 0;
 $DownValue = 0;
+$countRepeatLetter = 0;
 $Length = strlen($Password);
 if (ctype_alnum($Password))
 {
@@ -29,7 +30,8 @@ if (ctype_alnum($Password))
     {
       $Numbers++;
     }
-    for ($i = 1; $i < $Length; $i++)
+    $i = $countRepeatLetter;
+    While ($i < $Length)
     {
       for ($j = 1; $j < $Length; $j++)
       {
@@ -38,11 +40,15 @@ if (ctype_alnum($Password))
           $CountRepeats++;
         }
       }
+      break;
     }
     $Count++;
+    $countRepeatLetter++;
   }
 }
+
 $Reliability = $Reliability + $Count*4 + $Numbers*4 + ($Length - $UpperValue)*2 + ($Length - $DownValue)*2;
+
 if ($Numbers === 0) 
 {
     $Reliability = $Reliability - $Count;

@@ -3,6 +3,7 @@ function getGETParameter(string $name):?string
 {
     return isset($_GET[$name])?(string)$_GET[$name]: null;
 }
+
 header("Content-Type: text/plain");
 $Identifier = getGETParameter('identifier');
 if (ctype_alnum($Identifier))

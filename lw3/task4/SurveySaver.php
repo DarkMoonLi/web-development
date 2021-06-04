@@ -3,36 +3,29 @@ function getGETParameter(string $name):?string
 {
     return isset($_GET[$name])?(string)$_GET[$name]: null;
 }
+
 header("Content-Type: text\plane");
-$First_name = getGETParameter('first_name');
-$Last_name = getGETParameter('last_name');
-$Email = getGETParameter('email');
-$Age = getGETParameter('age');
+$firstName = getGETParameter('first_name');
+$lastName = getGETParameter('last_name');
+$email = getGETParameter('email');
+$age = getGETParameter('age');
 if (is_dir('data'))
 {
-    $fh = fopen("data/$Email.txt", 'w');
+    $fh = fopen("data/$email.txt", 'w+');
 }
-if ($First_name !== null)
+if ($firstName)
 {
-    fwrite($fh,"first_name=");
-    fwrite($fh, $First_name);
-    fwrite($fh, ' ');
+    fwrite($fh,"first_name=$firstName ");
 }
-if ($Last_name !== null)
+if ($lastName !== null)
 {
-    fwrite($fh,"last_name=");
-    fwrite($fh, $Last_name);
-    fwrite($fh, ' ');
+    fwrite($fh,"last_name=$fastName ");
 }
-if ($Email !== null)
+if ($email !== null)
 {
-    fwrite($fh,"email=");
-    fwrite($fh, $Email);
-    fwrite($fh, ' ');
+    fwrite($fh,"email=$email ");
 }
-if ($Age !== null)
+if ($age !== null)
 {
-    fwrite($fh,"age=");
-    fwrite($fh, $Age);
-    fwrite($fh, ' ');
+    fwrite($fh,"age=$age ");
 }
