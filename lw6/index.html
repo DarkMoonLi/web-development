@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="Css/Styles.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="menu">
@@ -118,25 +119,56 @@
       </div>
     </div>
     <div class="questionnaire">
-      <span>
-
-      </span>
-      <form>
-        <input type="text"/>
-        <input type="text"/>
-        <select size="1" name="country" placeholder="Россия">
-          <option>USA</option>
-          <option>Canada</option>
-          <option>Russia</option>
-        </select>
-        <label>
-          <input type="radio"/>
-          <input type="radio"/>
-        </label>
+      <span class="questionnaire__header">напиши мне</span>
+      <form class="questionnaire__form">
+        <div>
+          <label class="questionnaire-text star">
+            Ваше имя
+          </label>
+          <input class="questionnaire__form_input-name" type="text"/>
+        </div>
+        <div>
+          <label class="questionnaire-text star">
+            Ваш email
+          </label>
+          <input class="questionnaire__form_input-email" type="text"/>
+        </div>
+        <div>
+          <label class="questionnaire-text">
+            Откуда вы?
+          </label>
+          <select class="questionnaire__form_input-country" size="1" name="country">
+            <option class="form__input-country_text" value="Россия">Россия</option>
+            <option class="form__input-country_text" value="Канада">Канада</option>
+            <option class="form__input-country_text" value="USA">USA</option>
+          </select>
+        </div>
+        <div>
+          <label class="questionnaire-text">Ваш пол</label>
+          <span class="button-male">
+            <input type="radio"/>
+            <label class="text-gender">Мужской</label>
+          </span>
+          <span class="button-female">
+            <input type="radio"/>
+            <label class="text-gender">Женский</label>
+          </span>
+        </div>
+        <div>
+          <label class="questionnaire-text star">
+            Ваше сообщение
+          </label>
+          <textarea class="questionnaire__form_input-massage"></textarea>
+        </div>
+        <div class="block-button-send">
+          <span class="block-button-send__button button-text">
+            Отправить
+          </span>
+        </div>
       </form>
     </div>
     <footer class="footer">
-      
+      <span class="footer__text">© 2006-2018 Поволжский государственный технологический университет, ФГБОУ ВО «ПГТУ»</span>
     </footer>
   </body>
 </html>

@@ -9,9 +9,9 @@
     background-image: url(../images/background.png);
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
     width: 100%;
-    height: 100%;
+    min-width: 1920px;
+    justify-content: center;
 }
 
 .menu
@@ -27,8 +27,7 @@
     height: 50px;
     background-color: #15a98c;
     color: #f5f5f5;
-    margin-left: 480px;
-    margin-right: 10px;
+    margin: 0 10px 0 480px;
 }
 
 .menu__button-text
@@ -53,10 +52,10 @@
     height: 50px;
 }
 
-.container
+.main-block__container
 {
     width: 100%;
-    margin: 0 480px 0 480px;
+    margin: 0 0 0 419px;
 }
 
 .clear-float
@@ -69,9 +68,7 @@
 .block-image
 {
     float: left;
-    margin-left: 62px;
-    margin-top: 211px;
-    margin-bottom: 23px;
+    margin: 211px 0 23px 62px;
 }
 
 .block-image__image
@@ -87,8 +84,7 @@
     justify-content: flex-start;
     width: 570px;
     height: 100px;
-    margin-right: 7px;
-    margin-top: 173px;
+    margin: 173px 7px 0 0;
 }
 
 .block-quote__image
@@ -103,11 +99,9 @@
 
 .block-quote__quote
 {
-    margin-top: 63px;
-    margin-left: 62px;
+    margin: 63px 0 1px 62px;
     font: italic 28px/1.5 "Georgia";
     color: #ffffff;
-    margin-bottom: 1px;
 }
 
 .block-quote__author
@@ -127,24 +121,21 @@
 {
     font: 600 24px/32px "Open Sans";
     color: #15a98c;
-    padding-top: 17px;
-    padding-left: 62px;
+    padding: 17px 0 0 62px;
 }
 
 .side-bar__favourites-films
 {
     font: 600 24px/32px "Open Sans";
     color: #15a98c;
-    padding-top: 41px;
-    padding-left: 62px;
+    padding: 41px 0 0 62px;
 }
 
 .side-bar__list
 {
     font: 19px/36px Georgia;
     color: #555555;
-    margin-top: 12px;
-    margin-left: 83px;
+    margin: 12px 0 0 83px;
 }
 
 .side-bar__list_string
@@ -161,20 +152,18 @@
 {
     display: inline-block; 
     width: 570px;
-    margin-left: 139px;
-    margin-top: -143px;
+    margin: -143px 0 0 139px;
 }
 
 .content__name
 {
     font: bold 49px/42px "Open Sans";
-    margin-bottom: 26px;
-    margin-left: 7px;
+    margin: 0 0 26px 7px;
 }
 
 .content__hobby
 {
-    font: 400 36px/42px "Open Sans"; 
+    font: 600 36px/42px "Open Sans"; 
     margin-top: 42px;
 }
 
@@ -206,8 +195,7 @@
     font: 19px/32px Georgia;
     color: #15a98b;
     text-decoration: underline;
-    margin-top: 42px;
-    margin-left: 3px;
+    margin: 42px 0 0 3px;
 }
 
 .content__write-to-me_arrow::after
@@ -221,7 +209,7 @@
 {
     margin-left: 360px;
     font: 400 34px/42px "Open Sans";
-    color: #333333;
+    color: #333;
 }
 
 .block-films
@@ -230,11 +218,14 @@
     margin-top: 56px;
     background-color: #f9f9f9;
     height: 1005px;
+    width: 100%;
+    min-width: 1920px;
 }
 
 .block-films__films
 {
-    margin:0 275px 0 360px;
+    margin:0 275px 0 470px;
+    width: 1000px;
     display: flex;
     justify-content: center;
 }
@@ -263,9 +254,7 @@
 
 .block-films__block-button
 {
-    margin-top: 54px;
-    display: flex;
-    justify-content: center;
+    margin: 54px 80px 0 795px;
     width: 100%;
 }
 
@@ -274,6 +263,7 @@
     font:19px/32px "Georgia";
     color: #f5f5f5;
 }
+
 .block-films__block-button_all-films
 {
     display: flex;
@@ -288,6 +278,137 @@
 
 .questionnaire
 {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.questionnaire__header
+{
+    position: relative;
+    font: 300 36px/1.17 "Open Sans";
+    text-transform: uppercase;
+    color: #333;
+    width: 100%;
+    margin: 45px 0 0 830px;
+}
+
+.questionnaire__header::after
+{
+    position: absolute;
+    margin: 20px 0 0 18px;
+    border-top: 1px solid #555555;
+    border-bottom: 1px #555555;
+    width: 200px;
+    content: "";
+}
+
+.questionnaire__header::before
+{
+    position: relative;  
+    content: "";
+    top: 21px;
+    right: 220px;
+    display: block;
+    background-color: #000;
+    width: 200px;
+    height: 1px;
+}
+
+.questionnaire__form
+{
+    margin: 67px 0 0 689px; 
+}
+
+.questionnaire-text
+{
+    display: block;
+    font: 400 21px/1.6 "Open Sans";
+    color: #333;
+}
+
+.star::after
+{
+    content:"*";
+    color: #ff0000;
+}
+
+.questionnaire__form_input-name
+{
+    width: 537px;
+    height: 45px;
+    margin: 5px 0 23px 0;
+}
+
+.questionnaire__form_input-email
+{
+    width: 537px;
+    height: 45px;
+    margin: 3px 0 24px 0;
+}
+
+.questionnaire__form_input-country
+{
+    width: 540px;
+    height: 49px;
+    margin: 4px 2px 42px 0;
+}
+
+.text-gender
+{
+    margin: 0 30px 0 3px;
+    font: 600 18px/1.78 "Open Sans";
+    color: #333;
+}
+
+.button-male
+{   display: inline-block;
+    margin: 4px 0 0 1px;
+}
+
+.button-female
+{
+    display: inline-block;
+    margin: 4px 0 35px 2px;
+}
+
+.questionnaire__form_input-massage
+{
+    margin: 1px 0 0 1px;
+    width: 537px;
+    height: 150px;
+}
+
+.form__input-country_text
+{
+    margin-left: px;
+    font: 400 18px/1.77 "Open Sans";
+}
+
+.block-button-send
+{
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: url(../images/button_background.jpg);
+    width: 220px;
+    height: 50px;
+    margin: 44px 0 52px 0;
+}
+
+.footer
+{
+    width: 100%;
+    padding:18px 0 0 592px;
+    height: 70px;
+    background-color: #f9f9f9;
+}
+
+.footer__text
+{
+    font: 16px/2 "Georgia";
+    color: #555;
 }
