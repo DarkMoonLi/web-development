@@ -1,0 +1,16 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+.centerElements
+{
+  margin-left: 35%;
+}
+
+.borderCanvas
+{
+  display: block;
+  border: 2px solid;
+}
