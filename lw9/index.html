@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Profile-page</title>
+    <link rel="stylesheet" type="text/css" href="Css/Styles.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="menu">
+      <div class="menu__button-about-me menu__button-text">
+        <img src="../lw6/images/about_me_icon.png" alt="Icon Person"/>
+        <span>Обо мне</span>
+      </div>
+      <div class="menu__button-hobby menu__button-text">
+        <img src="../lw6/images/hobby_icon.png" alt="Icon Heart"/>
+        <span>Мое хобби</span>
+      </div>
+      <div class="menu__button-films menu__button-text">
+        <img src="../lw6/images/video_icon.png" alt="Icon Camera"/>
+        <span>Любимые фильмы</span>
+      </div>
+    </header>
+    <div class="main-block">
+      <div class="main-block__container"> 
+        <div class="block-image">
+          <img src="images/photo.png" alt="Photo of a girl" class="block-image__image"/>
+        </div>
+        <div class="block-quote">
+          <blockquote>
+            <p class="block-quote__quote">Мы берем на себя много, потому что мало чего боимся</p>
+            <cite class="block-quote__author">— Том Демарко. Deadline</cite>
+          </blockquote>
+        </div>
+        <div class="clear-float"></div>
+        <div class="side-bar">
+          <h3 class="side-bar__favourites-author">Любимые писатели:</h3>
+          <ul class="side-bar__list">
+            <li>Айзек Азимов</li>
+            <li>Говард Лавкрафт</li>
+            <li>Дмитрий Глуховский</li>
+            <li>Чак Паланик</li>
+          </ul>
+          <h3 class="side-bar__favourites-films">Любимые фильмы:</h3>
+          <ol class="side-bar__list side-bar__list_writers">
+            <li>Шоу Трумэна</li>
+            <li class="side-bar__list_string">Малхолланд Драйв</li>
+            <li class="side-bar__list_string">Семь жизней</li>
+            <li class="side-bar__list_string">Гравитация</li>
+          </ol>
+        </div>
+        <article class="content">
+          <h1 class="content__name">Jane Doe</h1>
+          <img src="images/strip.png" alt="Strip" class="content__strip"/>
+          <p class="content__text_big-indent content__text">
+            В 1930-е годы прошлого века физик Джордж Гамоу из университета штата Колорадо начал публиковать <br> мини-сериал рассказов о неком мистере Томпкинсе, 
+            банковском клерке средних лет. Мистер Томпкинс, как явствовало из этих историй, интересовался современной наукой. 
+          </p>
+          <h2 class="content__hobby">Моё хобби</h2>
+          <p class="content__text_small-indent content__text">
+            Он регулярно посещал вечерние лекции местного профессора и, разумеется, всегда засыпал на самом интересном месте.<br> 
+            А когда просыпался, то обнаруживал себя в каком-нибудь параллельном мире, где один из основных законов физики действовал не так, как в его мире. 
+          </p>
+          <p class="content__write-to-me content__write-to-me_arrow">Напиши мне  </p>
+        </article>
+        <span class="clear-float"></span>
+      </div>
+    </div>
+    <div class="block-films">
+      <h2 class="block-films__love-films">Любимые фильмы</h2>
+      <div class = "block-films__films slider-container">
+        <a class="block-films__btn_prev block-films__btn_prev-arrow"  id="btn-prev"></a>
+        <div class="slider-track" id="track">
+          <div class="slider-item">
+            <img src="../lw6/images/Shawshank-Redemption.png" alt="Shawshank-Redemption" class="block-films__films_image"/>
+            <h3 class="block-films__films_name-film">Побег из Шоушенка</h3>
+            <p class="block-films__films_films-text">
+              Успешный банкир Энди Дюфрейн обвинен в убийстве собственной <br>
+              жены и ее любовника. Оказавшись в тюрьме под названием Шоушенк, он сталкивается с жестокостью и беззаконием, 
+              царящими по обе<br> стороны решетки. Каждый, кто попадает в эти стены, становится их рабом до конца жизни. Но Энди, вооруженный живым умом и доброй душой, 
+              отказывается мириться с приговором судьбы и начинает разрабатывать невероятно дерзкий план своего освобождения.
+            </p>
+          </div>
+
+          <div class="slider-item">
+            <img src="../lw6/images/Narcosis.png" alt="Narcosis" class="block-films__films_image"/>
+            <h3 class="block-films__films_name-film">Наркоз</h3>
+            <p class="block-films__films_films-text">
+              Клай Бересфорд вынужден лечь под нож. Однако в процессе операции на сердце он неожиданно приходит в<br> себя. Находясь в парализованном состоянии, 
+              будучи не в силах пошевелить ни рукой, ни ногой, он,<br> тем не менее, чувствует каждое<br> касание скальпеля к своей плоти…
+            </p>
+          </div>
+
+          <div class="slider-item">
+            <img src="../lw6/images/Astral.png" alt="Astral" class="block-films__films_image"/>
+            <h3 class="block-films__films_name-film">Астрал</h3>
+            <p class="block-films__films_films-text">
+              Джош и Рене переезжают со своими детьми в новый дом, но не успевают толком распаковать вещи, как начинаются странные события. Необъяснимо перемещаются<br> предметы, 
+              в детской звучат странные звуки… Но в настоящий ужас<br> приходят родители, когда их десятилетний сын Далтон впадает в кому. 
+              Все усилия врачей в больнице помочь мальчику безуспешны.
+            </p>
+          </div>
+
+          <div class="slider-item">
+            <img src="../lw9/images/Gravity.png" alt="Gravity" class="block-films__films_image"/>
+            <h3 class="block-films__films_name-film">Гравитация</h3>
+            <p class="block-films__films_films-text">
+              Доктор Райан Стоун, блестящий специалист в области медицинского инжиниринга, отправляется в свою первую космическую миссию под командованием ветерана<br> астронавтики 
+              Мэтта Ковальски, для которого этот полет — последний<br> перед отставкой. Но во время,<br> казалось бы, рутинной работы за бортом случается катастрофа.<br> 
+              Шаттл уничтожен, а Стоун и<br> Ковальски остаются совершенно<br> одни; они находятся в связке друг с другом, и все, что они могут, — это двигаться по орбите в 
+              абсолютно черном пространстве без всякой<br> связи с Землей и какой-либо<br> надежды на спасение.
+            </p>
+          </div>
+
+          <div class="slider-item">
+            <img src="../lw9/images/Zelenaya-milya_001.jpg" alt="Green_Mile" class="block-films__films_image"/>
+            <h3 class="block-films__films_name-film">Зеленая миля</h3>
+            <p class="block-films__films_films-text">
+              Пол Эджкомб - начальник блока смертников в тюрьме «Холодная гора», каждый из узников которого однажды проходит «зеленую милю» по пути к месту казни. 
+              Пол повидал много заключённых и надзирателей за время работы. Однако гигант Джон Коффи, обвинённый в страшном преступлении, стал одним из самых необычных обитателей блока.
+            </p>
+          </div>
+
+          <div class="slider-item">
+            <img src="../lw9/images/vlastelin.jpg" alt="KingOfRing" class="block-films__films_image"/>
+            <h3 class="block-films__films_name-film">Властелин колец: Возвращение короля </h3>
+            <p class="block-films__films_films-text">
+              Повелитель сил тьмы Саурон направляет свою бесчисленную армию под стены Минас-Тирита, крепости Последней Надежды.
+              Он предвкушает близкую победу, но именно это мешает ему заметить две крохотные фигурки — хоббитов, приближающихся к Роковой Горе, 
+              где им предстоит уничтожить Кольцо Всевластья.
+            </p>
+          </div>
+
+          <div class="slider-item">
+            <img src="../lw9/images/interstellar.jpg" alt="Interstellar" class="block-films__films_image"/>
+            <h3 class="block-films__films_name-film">Интерстеллар</h3>
+            <p class="block-films__films_films-text">
+              Когда засуха, пыльные бури и вымирание растений приводят человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину 
+              (которая предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для космических путешествий 
+              человека и найти планету с подходящими для человечества условиями.
+            </p>
+          </div>
+
+          <div class="slider-item">
+            <img src="../lw9/images/friends.jpg" alt="friends" class="block-films__films_image"/>
+            <h3 class="block-films__films_name-film">Друзья: Воссоединение</h3>
+            <p class="block-films__films_films-text">
+              Исполнители главных ролей сериала «Друзья» воссоединяются и посещают места съёмок легендарного шоу — квартиру Моники, кофейню Central Perk, знаменитый фонтан — а также 
+              встречаются с актёрами, исполнившими гостевые роли, и рассказывают о забавных случаях со съёмок.
+            </p>
+          </div>
+
+          <div class="slider-item">
+            <img src="../lw9/images/orrestGump.jpg" alt="ForestGump" class="block-films__films_image"/>
+            <h3 class="block-films__films_name-film">Форрест Гамп</h3>
+            <p class="block-films__films_films-text">
+              От лица главного героя Форреста Гампа, слабоумного безобидного человека с благородным и открытым сердцем, рассказывается история его необыкновенной жизни.
+              Фантастическим образом превращается он в известного футболиста, героя войны, преуспевающего бизнесмена. Он становится миллиардером, но остается таким же бесхитростным, 
+              глупым и добрым. Форреста ждет постоянный успех во всем, а он любит девочку, с которой дружил в детстве, но взаимность приходит слишком поздно.
+            </p>
+          </div>
+
+          <div class="slider-item">
+            <img src="../lw9/images/list-shandler.jpg" alt="list-shandler" class="block-films__films_image"/>
+            <h3 class="block-films__films_name-film">Список Шиндлера</h3>
+            <p class="block-films__films_films-text">
+              Фильм рассказывает реальную историю загадочного Оскара Шиндлера, члена нацистской партии, преуспевающего фабриканта, спасшего во время Второй мировой войны почти 1200 
+              евреев.
+            </p>
+          </div>
+        </div>
+        <a class="block-films__btn_prev block-films__btn_next-arrow" id="btn-next"></a>
+      </div>
+      <div class="block-films__block-button">
+        <span class="block-films__block-button_all-films button-text">
+          Все фильмы
+        </span>
+    </div>
+  </div>
+    <div class="questionnaire">
+      <span class="questionnaire__header">напиши мне</span>
+      <form class="questionnaire__form">
+        <div>
+          <label class="questionnaire-text star">
+            Ваше имя
+          </label>
+          <input class="questionnaire__form_input-name" type="text"/>
+        </div>
+        <div>
+          <label class="questionnaire-text star">
+            Ваш email
+          </label>
+          <input class="questionnaire__form_input-email" type="text"/>
+        </div>
+        <div>
+          <label class="questionnaire-text">
+            Откуда вы?
+          </label>
+          <select class="questionnaire__form_input-country" size="1" name="country">
+            <option class="form__input-country_text" value="Россия">Россия</option>
+            <option class="form__input-country_text" value="Канада">Канада</option>
+            <option class="form__input-country_text" value="USA">USA</option>
+          </select>
+        </div>
+        <div>
+          <label class="questionnaire-text">Ваш пол</label>
+          <span class="button-male">
+            <input type="radio"/>
+            <label class="text-gender">Мужской</label>
+          </span>
+          <span class="button-female">
+            <input type="radio"/>
+            <label class="text-gender">Женский</label>
+          </span>
+        </div>
+        <div>
+          <label class="questionnaire-text star">
+            Ваше сообщение
+          </label>
+          <textarea class="questionnaire__form_input-massage"></textarea>
+        </div>
+        <div class="block-button-send">
+          <span class="block-button-send__button button-text">
+            Отправить
+          </span>
+        </div>
+      </form>
+    </div>
+    <footer class="footer">
+      <span class="footer__text">© 2006-2018 Поволжский государственный технологический университет, ФГБОУ ВО «ПГТУ»</span>
+    </footer>
+    <script type="text/javascript" src="js/carusel.js"></script>
+  </body>
+</html>
